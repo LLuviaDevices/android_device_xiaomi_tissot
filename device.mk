@@ -374,10 +374,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
-# TextClassifier smart selection model files
-PRODUCT_PACKAGES += \
-    textclassifier.smartselection.bundle1
-
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
@@ -420,7 +416,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     hostapd_cli \
     dhcpcd.conf \
-    wificond \
     libwifi-hal-qcom \
     wpa_supplicant \
     wpa_supplicant.conf \
@@ -445,8 +440,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/7824900.sdhci/by-name/system
 $(call inherit-product, build/target/product/verity.mk)
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
 
 # TextClassifier
 PRODUCT_PACKAGES += \
