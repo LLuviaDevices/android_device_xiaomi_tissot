@@ -119,9 +119,13 @@ vendor.vidc.enc.disable.pq=true
 # Fix Miracast
 persist.sys.wfd.virtual=0
 
+# ART
+dalvik.vm.dex2oat-filter=speed
+dalvik.vm.image-dex2oat-filter=speed
+
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
-ro.sys.fw.dex2oat_thread_count=4
+ro.sys.fw.dex2oat_thread_count=8
 
 # Netmgrd
 ro.use_data_netmgrd=true
